@@ -8,17 +8,16 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <body>
-        <form>
-            <div class="form-group">
-                <label for="UserEmail">User Email</label>
-                <input type="text" class="form-control" id="UsersEmailHolder" placeholder="Enter Username">
+        <div class="wrapper">
+                <form class="form-signin">       
+                  <h2 class="form-signin-heading">Please login</h2>
+                  <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+                  <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                  <label class="checkbox">
+                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                  </label>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+                </form>
               </div>
-              <p1></p1>
-              <div class="form-group">
-                <label for="formPassword">Password</label>
-                <input type="text" class="form-control" id="formPassword" placeholder="Password">
-              </div>
-        </form>
     </body>
 </html> 
