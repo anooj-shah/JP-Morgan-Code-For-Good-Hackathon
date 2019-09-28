@@ -2,11 +2,79 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+
+label {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 50px 20px 0 rgba(0,0,0,0.1);
+  display: flex;
+  height: 70px;
+  padding: 8px;
+  position: relative;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  width: 125px;
+}
+
+input {
+  display: none;
+}
+
+label:after {
+  animation: move-left 400ms;
+  background: #E2E2E2 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 24 24'%3E%3Cpath stroke='#E2E2E2' fill='#E2E2E2' stroke-linecap='round' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E") no-repeat center;
+  border-radius: 12px;
+  content: '';
+  height: 50px;
+  left: 8px;
+  outline: none;
+  position: absolute;
+  transition: background 100ms linear;
+  width: 50px;
+}
+
+label:active {
+  box-shadow: 0px 10px 20px 0 rgba(0,0,0,0.2);
+  transform: scale(1.8);
+}
+
+input:checked + label:after {
+  animation: move-right 400ms;
+  background: #6EB54E url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 24 24'%3E%3Cpath stroke='white' fill='white' stroke-linecap='round' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E") no-repeat center;
+  left: 72px;
+}
+
+/* Animation */
+
+@keyframes move-right {
+  0% {
+    left: 8px;
+  }
+  75% {
+    left: 78px;
+  }
+  100% {
+    left: 72px;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    left: 72px;
+  }
+  75% {
+    left: 2px;
+  }
+  100% {
+    left: 8px;
+  }
+}
+    </style>
 </head>
 <body>	
-<div>
+<div >
   <nav class="navbar navbar-expand-lg navbar-light" >
-  	<a class="navbar-brand" href="#">RISE</a>
+  	<a class="navbar-brand" href="#"><h1>RISE</h1></a>
  	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
   	  <span class="navbar-toggler-icon"></span>
  	 </button>
@@ -19,19 +87,83 @@
    	     <a class="nav-link" href="info.html"style="color:#000;">Info</a>
  	     </li>
   	    <li class="nav-item">
-   	     <a class="nav-link" href="start_here.html"style="color:#000;">First Steps</a>
+   	     <a class="nav-link" href="#"style="color:#000;">First Steps</a>
     	  </li>
 		  <li class="nav-item">
-   	     <a class="nav-link" href="#"style="color:#000;">Playbook</a>
+   	     <a class="nav-link" href="playbook.html"style="color:#000;">Playbook</a>
     	  </li>
    	   <li class="nav-item">
    	     <a class="nav-link" href="#"style="color:#000;">Log In</a>
  	     </li>
  	   </ul>
  	 </div>
-	  <!--Use PHP or JS to insert points-->
-		<span class="navbar-text" style="background-color:#df593f;">Points:</span>
+	  <!--Use PHP to inser points-->
+		<span class="navbar-text" style="background-color:#df593f;">Points: </span>
 	</nav>
+</div>
+<!-- BODY CONTENT -->
+<div style="background-color: #ddd; margin-left: 10%; margin-right: 10%; border-radius: 50px;">
+<div class="row justify-content-center" style="padding-top: 5%;">
+	<h1 style="background-color:#fff;padding:5% 5% 5% 5%;border-radius: 50px;">Don't Know Where to Start?</h1>
+</div>
+<div class="row justify-content-center" style="padding-top:-5%">
+	<h3 >That's OK: We're Here To Help</h3>
+</div>
+       <!--Section 1-->
+    <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
+        <div class="input-group-prepend">
+            <div class=""style="margin-left:-5%;">
+                <input id="toggle"type="checkbox" >
+                <label class="bigCheck"for="toggle"></label>
+            </div>
+        </div>
+        <h3 style="height:70px;">Know Your Issue</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--Section 2-->
+    <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
+        <div class="input-group-prepend">
+            <div class=""style="margin-left:-5%;">
+                <input id="toggle2"type="checkbox" >
+                <label class="bigCheck"for="toggle2"></label>
+            </div>
+        </div>
+        <h3 style="height:70px;">Know How Your State Works</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--Section 3-->
+     <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
+        <div class="input-group-prepend">
+            <div class=""style="margin-left:-5%;">
+                <input id="toggle3"type="checkbox" >
+                <label class="bigCheck"for="toggle3"></label>
+            </div>
+        </div>
+        <h3 style="height:70px;">Know Who to Talk To</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--Section 4-->
+     <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
+        <div class="input-group-prepend">
+            <div class=""style="margin-left:-5%;">
+                <input id="toggle4"type="checkbox" >
+                <label class="bigCheck"for="toggle4"></label>
+            </div>
+        </div>
+        <h3 style="height:70px;">Know Your Friends and Neighbors</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!--Section 5-->
+     <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
+        <div class="input-group-prepend">
+            <div class=""style="margin-left:-5%;">
+                <input id="toggle5"type="checkbox" >
+                <label class="bigCheck"for="toggle5"></label>
+            </div>
+        </div>
+        <h3 style="height:70px;">File Your Initiative</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
 </div>
 </body>
 </html>
