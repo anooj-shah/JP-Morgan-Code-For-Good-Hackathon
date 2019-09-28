@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body:before {
+    position: fixed;
+    content: "";
+    
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.card {
+    max-width: 600px;
+    margin: 80px auto;
+    box-shadow: 1px 2px 20px 0px #000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.input-container-z {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container-z label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #666
+}
+
+.input-container-z .inp-z {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    border: none;
+    border-bottom: 2px solid #999;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    transition: .3s all ease;
+}
+
+.input-container-z .inp-z:focus {
+    outline: none;
+    border-color: #09d079;
+}
+
+.btn-z {
+    padding: 10px 40px;
+    margin: 20px auto;
+    background-color: ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.btn-z:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 144, 0.53);
+}
+
+.btn-z:focus {
+    outline: none;
+}
+
+
+    </style>
+</head>
+<body >
+<div >
+  <nav class="navbar navbar-expand-lg navbar-light" >
+  	<a class="navbar-brand" href="#"><h1>RISE</h1></a>
+ 	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  	  <span class="navbar-toggler-icon"></span>
+ 	 </button>
+ 	 <div class="collapse navbar-collapse" id="navbarNav"style="background-color:#df593f;">
+  	  <ul class="navbar-nav">
+  	    <li class="nav-item active">
+   	     <a class="nav-link" href="index.html" style="color:#000;">Home</a>
+   	   </li>
+		  <li class="nav-item">
+   	     <a class="nav-link" href="info.html"style="color:#000;">Info</a>
+ 	     </li>
+  	    <li class="nav-item">
+   	     <a class="nav-link" href="start_here.html"style="color:#000;">First Steps</a>
+    	  </li>
+		  <li class="nav-item">
+   	     <a class="nav-link" href="playbook.html"style="color:#000;">Playbook</a>
+    	  </li>
+   	   <li class="nav-item">
+   	     <a class="nav-link" href="log_in.html"style="color:#000;">Log In</a>
+ 	     </li>
+ 	   </ul>
+ 	 </div>
+	  <!--Use PHP to inser points-->
+		<span class="navbar-text" style="background-color:#df593f;">Points: </span>
+	</nav>
+</div>
+
+<!--Begin Form-->
+
+    <div class="card">
+        <form>
+            <h1>Form</h1>
+            <div class="input-container-z">
+                <label>Name</label><br />
+                <input class="inp-z" type="text" placeholder="Name">
+            </div>
+            <div class="input-container-z">
+                <label>Email</label><br />
+                <input class="inp-z" type="email" placeholder="Email">
+            </div>
+            <div class="input-container-z">
+                <label>State</label><br />
+                <input class="inp-z" type="text" placeholder="State">
+            </div>
+
+            <div class="input-container-z">
+                <label>Message</label><br />
+                <textarea class="inp-z" rows="5"></textarea>
+            </div>
+            <button class="btn-z">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
