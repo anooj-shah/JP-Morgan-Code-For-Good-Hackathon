@@ -47,3 +47,6 @@ o	People get connected to ruse and connected through slack and zoom
 o	GAMIFICATION!
 o	You can’t go to the next level if you didn’t do research
 o	`
+
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+https://www.w3schools.com/bootstrap4/bootstrap_cards.asp

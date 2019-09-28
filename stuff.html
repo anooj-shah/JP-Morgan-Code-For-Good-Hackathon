@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Markazi+Text|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004784">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="theme-color" content="#ffffff">
+	<title>Anooj Shah | About Me</title>
+</head>
+
+<body class="about">
+	<div class="main-block">
+		<div class="header">
+			<h1><span class="go-home-link">
+					<a title="Go Home" href="/index.html">
+						<i class="fas fa-long-arrow-alt-left"></i>
+					</a>
+				</span>About Me</h1>
+		</div>
+		<div class="info">
+			<p> Want <span id="more-detail">more</span> detail? Click <button onclick="toggleMoreDetail()" class="btn btn-xs btn-primary">here</button>.
+			</p>
+		</div>
+		<div class="shadow-holder"></div>
+		<div class="timeline-wrapper">
+			<ul class="timeline">
+
+				<!-- Item 1 -->
+				<!-- <li class="timeline-item">
+					<div class=" portfolio-card has-logo direction-r">
+						<div class="portfolio-card-body flag-wrapper">
+							<h5 class="portfolio-card-title flag">
+								<span class="flag flag-shadow">
+									Alpine Mechanical Services
+								</span>
+							</h5>
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
+								degree?
+							</p>
+							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
+							<div class="tags">
+								<span class="badge badge-pill badge-danger">Work</span>
+								<span class="badge badge-pill badge-info">MEAN</span>
+								<span class="badge badge-pill badge-warning">Lunr</span>
+							</div>
+						</div>
+					</div>
+				</li> -->
+
+				<!-- Item 2 -->
+				<!-- <li class="timeline-item">
+					<div class=" portfolio-card has-logo direction-l">
+						<div class="portfolio-card-body flag-wrapper">
+							<h5 class="portfolio-card-title flag">
+								<span class="flag flag-shadow">
+									Alpine Mechanical Services
+								</span>
+								<span class="date">JUN 15</span>
+							</h5>
+							<p class="card-text">A description of all the lectures and courses I have taken and my final
+								degree?
+							</p>
+							<img class="work-logo" title="Interactive Multimedia Group, my first job" src="images/img.png"></img>
+							<div class="tags">
+								<span class="badge badge-pill badge-danger">Work</span>
+								<span class="badge badge-pill badge-info">MEAN</span>
+								<span class="badge badge-pill badge-warning">Lunr</span>
+							</div>
+						</div>
+					</div>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	<script>
+		var $timeline = document.querySelector(".timeline");
+		var $toggleWord = document.querySelector("#more-detail");
+
+		var dots = [{
+			title: "LocalHack Houston",
+			date: new Date("Nov 1, 2018"),
+			short: "Won a hackathon sponsored by Microsoft and Github",
+			text: "We won the \"Best of Show\" Award for our mental health bot that used your text messages to track your mental health. My part was building a python simulator that anaylzed the text and then illustrated it using matplotlib. This was my first hackathon, and I had a great experience",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "MakeHarvard",
+			date: new Date("Feb 02, 2019"),
+			logo: { src: "images/makeharvard.png" },
+			short: "Had a great time building a robot that sorts your trash at the Harvard Makeathon.",
+			text: "I had an amazing experience at Harvard University for 3 days. My team built a robot that goes around and sorts your trash. We used machine learning to identify the trash and then an some motors to put the trash in the appropriate slot.",
+			tags: [{text: "College"}, {text: "Hackathon"}]
+		},{
+			title: "Celebal Technologies",
+			date: new Date("May 30, 2018"),
+			logo: { src: "images/celebaltechnologies.png" },
+			short: "Software Engineering Intern at Celebal Tech",
+			text: "As a Software Engineering Intern at Celebal Technologies, I learned the basics of IoT and developed an MVP for reducing air pollution.",
+			tags: [{text: "Work"}, {text: "Houston, Texas"}]
+		},{
+			title: "Eaton Corporation",
+			date: new Date("May 16, 2019"),
+			logo: { src: "images/eatoncorporation.png" },
+			short: "Software Engineering Intern working on Azure IoT Central.",
+			text: "I loved my experience at Eaton Corporation. I was on a 9 person global SCRUM team developing an IoT solution using Microsoft Azure IoT Central. I developed multi-threaded and asynchronous python simulators. I was given the opportunity to give a talk about Concurrency in Python where I talked about Python's threading and asyncio module.",
+			tags: [{text: "Work"}, {text: "Pittsburgh, PA"}]
+		},{
+			title: "TAMU Hack",
+			date: new Date("Feb 16, 2019"),
+			logo: { src: "images/mlh.png" },
+			short: "Built an application that rounded up venmo payments to help charities.",
+			text: "My team and I built an application that rounded up venmo payments and gave that extra money to a charity of your choice.",
+			tags: [{text: "Work"}, {text: "College Station, TX"}]
+		},{
+			title: "Anadarko Show-and-Tell",
+			date: new Date("Feb 16, 2019"),
+			logo: { src: "images/anadarko.png" },
+			short: "Won first place, for presenting my Trash Master, a smart trash can that used image recognition to sort recyclables.",
+			text: "This was an individual competition where I won first place for developing TrashMaster, a smart trash can that uses image recognition to sort recyclables. I presented to Anadarko Engineers at Texas A&M University.",
+			tags: [{text: "Personal"}, {text: "College Station, TX"}]
+		}
+		].sort(function(a, b) { return b.date.getTime() - a.date.getTime(); });
+
+		var options = {
+			short: true,
+			startRight: true
+		};
+
+		dots.forEach(appendTimelineItem);
+
+		function toggleMoreDetail() {
+			$timeline.innerHTML = "";
+			options.short = !options.short;
+			options.startRight = !options.startRight;
+			$toggleWord.textContent = $toggleWord.textContent == "less" ? "more" : "less";
+			dots.forEach(appendTimelineItem);
+		}
+
+		function appendTimelineItem(item, index) {
+			if(options.short && !item.short) return;
+			/*
+			<li class="timeline-item">
+				<div class="portfolio-card direction-r">
+					<div class="portfolio-card-body flag-wrapper">
+						<h5 class="portfolio-card-title flag">
+							<span class="flag flag-shadow">{{title}}</span>
+							<span class="date">JUL 15</span>
+						</h5>
+						<p class="card-text">{{text}}</p>
+						<div class="tags">{{tags}}</div>
+					</div>
+				</div>
+			</li>
+			*/
+			/* <li class="timeline-item"> */
+			var timelineItem = document.createElement("li");
+			timelineItem.classList.add("timeline-item");
+
+				/* <div class="portfolio-card direction-r"> */
+				var portfolioCard = document.createElement("div");
+				portfolioCard.classList.add("portfolio-card");
+				var isDirLeft = item.direction ? item.direction.toLowerCase().indexOf("l") > -1 : index%2==0;
+				if(options.startRight) isDirLeft = !isDirLeft;
+				var direction = isDirLeft ? "direction-l" : "direction-r";
+				portfolioCard.classList.add(direction);
+
+				/* <div class="portfolio-card-body flag-wrapper"> */
+				var portfolioCardBody = document.createElement("div");
+				portfolioCardBody.classList.add("portfolio-card-body");
+				portfolioCardBody.classList.add("flag-wrapper");
+
+					/* <h5 class="portfolio-card-title flag"> */
+					var portfolioCardTitle = document.createElement("h5");
+					portfolioCardTitle.classList.add("portfolio-card-title");
+					portfolioCardTitle.classList.add("flag");
+
+						/* <span class="flag flag-shadow">{{title}}</span> */
+						var flagShadowSpan = document.createElement("span");
+						flagShadowSpan.classList.add("flag");
+						flagShadowSpan.classList.add("flag-shadow");
+						flagShadowSpan.textContent = item.title;
+
+						/* <span class="date">JUL 15</span> */
+						var dateSpan = document.createElement("span");
+						dateSpan.classList.add("date")
+						dateSpan.textContent = formatDate(item.date);
+
+						portfolioCardTitle.appendChild(flagShadowSpan);
+						portfolioCardTitle.appendChild(dateSpan);
+						portfolioCardBody.appendChild(portfolioCardTitle);
+
+					/* <p class="card-text">{{text}}</p> */
+					var cardText = document.createElement("p");
+					cardText.classList.add("card-text");
+					cardText.innerHTML = options.short ? item.short : item.text;
+					portfolioCardBody.appendChild(cardText);
+
+					if(item.logo) {
+						/* <img class="work-logo" src="{{src}}"></img> */
+						var logo = document.createElement("img");
+						logo.classList.add("work-logo");
+						logo.src = item.logo.src;
+						if(item.logo.css) logo.classList.add(item.logo.css);
+						portfolioCardBody.appendChild(logo);
+						portfolioCard.classList.add("has-logo");
+					}
+
+					/* <div class="tags">{{tags}}</div> */
+					var tags = document.createElement("div");
+					// 	/* <span class="badge badge-pill badge-danger">{{tag.text}}</span> */
+					// 	item.tags.forEach(function(tag) {
+					// 		var badge = document.createElement("span");
+					// 		badge.classList.add("badge");
+					// 		badge.classList.add("badge-pill");
+					// 		badge.classList.add("badge-danger");
+					// 		badge.textContent = tag.text;
+					// 		tags.appendChild(badge);
+					// 		tags.appendChild(document.createTextNode(" "));
+					// 	});
+					// tags.classList.add("tags");
+					portfolioCardBody.appendChild(tags);
+
+				portfolioCard.appendChild(portfolioCardBody);
+
+			timelineItem.appendChild(portfolioCard);
+
+			$timeline.appendChild(timelineItem);
+		}
+
+		function formatDate(date) {
+			var months = ["JAN", "FEB", "MARCH", "APR", "MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC"];
+			var year = date.getYear()-100;
+			return months[date.getMonth()] + " " + date.getFullYear();
+		}
+	</script>
+</body>
+
+</html>

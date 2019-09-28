@@ -71,7 +71,7 @@ input:checked + label:after {
 }
     </style>
 </head>
-<body>	
+<body  style="background-image:url('https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c992cb8c088937a8ebceca7_Ellipse1_BlueOutline.svg'); background-repeat: space;">	
 <div >
   <nav class="navbar navbar-expand-lg navbar-light" >
   	<a class="navbar-brand" href="#"><h1>RISE</h1></a>
@@ -87,7 +87,7 @@ input:checked + label:after {
    	     <a class="nav-link" href="info.html"style="color:#000;">Info</a>
  	     </li>
   	    <li class="nav-item">
-   	     <a class="nav-link" href="#"style="color:#000;">First Steps</a>
+   	     <a class="nav-link" href="start_here.html"style="color:#000;">First Steps</a>
     	  </li>
 		  <li class="nav-item">
    	     <a class="nav-link" href="playbook.html"style="color:#000;">Playbook</a>
@@ -102,65 +102,289 @@ input:checked + label:after {
 	</nav>
 </div>
 <!-- BODY CONTENT -->
+  <style>
+  body {
+  font-weight: 400;
+}
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #00b0bd;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #00b0bd;
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article p {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #00b0bd;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: #00b0bd;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 30px;
+  line-height: 40px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
+  </style>
+ 
 <div style="background-color: #ddd; margin-left: 10%; margin-right: 10%; border-radius: 50px;box-shadow: 20px 20px #999;">
+<!-- Vertical Timeline -->
+  <section id="conference-timeline">
+    <div class="timeline-start">Start</div>
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>Take a few weeks to research using these tools. In this time you can connect with other people who feel passionate for the same things.<span class="article-number">1</span></p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Another important step<span class="article-number">2</span></p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">1st</span>
+          <span class="month">Step</span>
+        </div>
+      </div>
+      <!-- // Article -->
+      
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>Next Steps<span class="article-number">3</span></p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Next Steps<span class="article-number">3</span></p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">2nd</span>
+          <span class="month">Step</span>
+        </div>
+      </div>
+      <!-- // Article -->
+      
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>Next Step<span class="article-number">4</span></p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Next Step <span class="article-number">5</span></p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date">Last</span>
+          <span class="month">Step</span>
+        </div>
+      </div>
+      <!-- // Article -->
+    </div>
+    <div class="timeline-end">End</div>
+  </section>
+  <!-- // Vertical Timeline -->
 <div class="row justify-content-center" style="padding-top: 5%;">
-	<h1 style="background-color:#fff;padding:5% 5% 5% 5%;border-radius: 50px;">Don't Know Where to Start?</h1>
+	<h1 style="background-color:#fff;padding:5% 5% 5% 5%;border-radius: 50px;">Let's Make A Difference</h1>
 </div>
 <div class="row justify-content-center" style="padding-top:-5%">
-	<h3 >That's OK: We're Here To Help</h3>
+	<h3 >Step by Step</h3>
 </div>
+
        <!--Section 1-->
     <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
-        <div class="input-group-prepend">
-            <div class=""style="margin-left:-5%;">
-                <input id="toggle"type="checkbox" >
-                <label class="bigCheck"for="toggle"></label>
-            </div>
-        </div>
-        <h3 style="height:70px;">Know Your Issue</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h3 style="height:70px;">Resources</h3>
+        
+        <p>Verified<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
     <!--Section 2-->
     <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
-        <div class="input-group-prepend">
-            <div class=""style="margin-left:-5%;">
-                <input id="toggle2"type="checkbox" >
-                <label class="bigCheck"for="toggle2"></label>
-            </div>
-        </div>
         <h3 style="height:70px;">Know How Your State Works</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
     <!--Section 3-->
      <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
-        <div class="input-group-prepend">
-            <div class=""style="margin-left:-5%;">
-                <input id="toggle3"type="checkbox" >
-                <label class="bigCheck"for="toggle3"></label>
-            </div>
-        </div>
-        <h3 style="height:70px;">Know Who to Talk To</h3>
+        <h3 style="height:70px;">Connect</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
     <!--Section 4-->
      <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
-        <div class="input-group-prepend">
-            <div class=""style="margin-left:-5%;">
-                <input id="toggle4"type="checkbox" >
-                <label class="bigCheck"for="toggle4"></label>
-            </div>
-        </div>
-        <h3 style="height:70px;">Know Your Friends and Neighbors</h3>
+        <h3 style="height:70px;">Gather Testimonials</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        
     </div>
     <!--Section 5-->
      <div class="input-group mb-3 row justify-content-left" style="padding:5%;">
-        <div class="input-group-prepend">
-            <div class=""style="margin-left:-5%;">
-                <input id="toggle5"type="checkbox" >
-                <label class="bigCheck"for="toggle5"></label>
-            </div>
-        </div>
         <h3 style="height:70px;">File Your Initiative</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>

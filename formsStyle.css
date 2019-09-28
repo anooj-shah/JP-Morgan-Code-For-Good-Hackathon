@@ -1,14 +1,7 @@
 @import "bourbon";
 
 body {
-  /*  background: #eee !important;*/
-    background-color: rgb(223,89,63);
-}
 
-.wrapper {	
-    margin-top: 100px;
-  margin-bottom: 100px;
-  
 }
 
 .form-signin {
