@@ -4,28 +4,43 @@
 <head>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-</head>
-<div class='bold-line'></div>
-<div class='container'>
-    <div class='window'>
-        <div class='overlay'></div>
-        <div class='content'>
-            <div class='welcome'>Hello There!</div>
-            <div class='subtitle'>We're almost done. Before using our services you need to create an account.</div>
-            <div class='input-fields'>
-                <input type='text' placeholder='Username' class='input-line full-width'></input>
-                <input type='email' placeholder='Email' class='input-line full-width'></input>
-                <input type='password' placeholder='Password' class='input-line full-width'></input>
 
-            </div>
-            <div class='spacing'>or continue with <span class='highlight'>Facebook</span></div>
-            <div><button class='ghost-round full-width'>Create Account</button></div>
-        </div>
+</head>
+
+<style>
+    body{
+        background-color: rgb(223,89,63);
+    }
+    SignUp-form{
+        margin-top: 50%;
+    }
+</style>
+
+<form>
+    <div class="SignUp-form">
+        <label for="InputFirstName">FirstName</label>
+        <input type="text" class="form-control" id="InputFirstName" placeholder="First Name">
     </div>
-</div>
+    <div class="SignUp-form">
+        <label for="InputLasttName">Last Name</label>
+        <input type="text" class="form-control" id="InputLasttName" placeholder="Last Name">
+    </div>
+    <div class="SignUp-form">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+    </div>
+    <div class="SignUp-form">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 </html>
