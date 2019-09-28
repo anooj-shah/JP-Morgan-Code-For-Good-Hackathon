@@ -47,10 +47,11 @@
     }
 </style>
 <div class="wrapper">
-    <form>
+    <form action = "name" method = "POST">
         <div class="SignUp-form">
             <label for="InputFirstName">FirstName</label>
             <input type="text" class="form-control" id="InputFirstName" placeholder="First Name" autofocus="" >
+        </form>
         </div>
         <div class="SignUp-form">
             <label for="InputLasttName">Last Name</label>
@@ -66,7 +67,7 @@
             <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
         </div>
 
-        <button type="button"  href="playbook.html" class="button1">Submit</button>
+        <button type="button" href="{% url 'index' %}" class="button1">Submit</button>
     </form>
 </div>
 
