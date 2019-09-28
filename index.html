@@ -61,6 +61,24 @@ div.fixed {
 </div>
 <div style="float:right">
 <p>Chatbot</p>
+<script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+  var myLandbot = new LandbotLivechat({
+    index: 'https://landbot.io/u/H-268150-I6TYLBW7WL6750AL/index.html',
+  });
+</script><script>
+  // Show a proactive message on landbot load
+  myLandbot.on('landbot-load', function() {
+    myLandbot.sendProactive({
+  "message": "Hello there!",
+  "author": "Rise-bot",
+  "avatar": "https://storage.googleapis.com/media.helloumi.com/brands/helloumi.png",
+  "extra": {
+    "hide_textbox": true
+  }
+});
+  });
+</script>
 
 </div>
 
@@ -70,9 +88,9 @@ div.fixed {
 	<img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c99709e0113b8a168fec8fa_RiseLogo_02.svg" style="background-color:#df593f; width:40%; background-width:90;">	
  </div>
 
-<div class="fixed">
+<!-- <div class="fixed">
 <img src="slack.jpg" class="rounded mx-auto d-block" alt="slack">
-</div>
+</div> -->
 
 
 
