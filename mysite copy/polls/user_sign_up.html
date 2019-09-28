@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+    body {
+        background-color: rgb(223, 89, 63);
+    }
+
+    .wrapper {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+    }
+    .SignUp-form {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1); 
+   
+    }
+    .input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+    }
+    .button1{
+        background-color: rgb(159, 159, 167);
+        border-radius: 6px;
+        margin : auto;
+        position: relative;
+        margin-bottom: 90%;
+        font-size: 15px;
+        left: 57.9%;
+
+    }
+</style>
+<div class="wrapper">
+    <form action = "name" method = "POST">
+        <div class="SignUp-form">
+            <label for="InputFirstName">FirstName</label>
+            <input type="text" class="form-control" id="InputFirstName" placeholder="First Name" autofocus="" >
+        </form>
+        </div>
+        <div class="SignUp-form">
+            <label for="InputLasttName">Last Name</label>
+            <input type="text" class="form-control" id="InputLasttName" placeholder="Last Name">
+        </div>
+        <div class="SignUp-form">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="SignUp-form">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+        </div>
+
+        <button type="button" href="{% url 'index' %}" class="button1">Submit</button>
+    </form>
+</div>
+
+</html>

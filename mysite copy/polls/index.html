@@ -21,7 +21,7 @@
    	     <a class="nav-link" href="index.html" style="color:#000;">Home</a>
    	   </li>
 		  <li class="nav-item">
-   	     <a class="nav-link" href="info.html"style="color:#000;">Info</a>
+   	     <a class="nav-link" href="{% url 'info' %}" style="color:#000;">Info</a>
  	     </li>
   	    <li class="nav-item">
    	     <a class="nav-link" href="start_here.html"style="color:#000;">First Steps</a>
@@ -47,7 +47,7 @@
 <div class="row justify-content-center" style="box-shadow:20px 20px #999; background-color:#ccc; border-radius:50px; width:50%;margin-left: 25%;">
 
 	<a class="nav-link" href="https://www.risenow.us/apply"style="color:#000;" >Apply Here</a>
-	<a  class="nav-link" href="signupForm.html" style="color:#000;">Create Account</a>
+	<a  class="nav-link" href="{% url 'user_sign_up' %}" style="color:#000;">Create Account</a>
 </div>
 <div style="float:right">
 <p>Chatbot</p>
