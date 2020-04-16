@@ -1,4 +1,12 @@
-# team-6
+# JP Morgan Code For Good
+1st place overall
+## Motivation
+This web app is for Rise - https://www.risenow.us/ 
+## Technoligies Used
+* Django/Python
+* SQL
+* HTML/CSS
+### Planning Section
 Rise
 -	Staff
 -	Growing data base of the staff members
@@ -42,11 +50,11 @@ Ideas?
 Summary
 -	Problem: 
 o	list of staff people that is not accessible to everyone 
-o	People don’t tknwo the pollical system 
+o	People don’t know the pollical system 
 o	People get connected to ruse and connected through slack and zoom
 o	GAMIFICATION!
 o	You can’t go to the next level if you didn’t do research
-o	`
+
 
 https://developers.google.com/maps/documentation/javascript/adding-a-google-map
 https://www.w3schools.com/bootstrap4/bootstrap_cards.asp
